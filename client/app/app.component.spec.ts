@@ -49,6 +49,7 @@ describe('Component: App', () => {
     expect(de[1].attributes['routerLink']).toBe('/cats');
     expect(de[2].attributes['routerLink']).toBe('/login');
     expect(de[3].attributes['routerLink']).toBe('/register');
+
   });
 
   it('should display the navigation bar correctly for logged users', () => {
@@ -64,6 +65,7 @@ describe('Component: App', () => {
     expect(de[1].attributes['routerLink']).toBe('/cats');
     expect(de[2].attributes['routerLink']).toBe('/account');
     expect(de[3].attributes['routerLink']).toBe('/logout');
+
   });
 
   it('should display the navigation bar correctly for admin users', () => {
@@ -82,6 +84,7 @@ describe('Component: App', () => {
     expect(de[2].attributes['routerLink']).toBe('/account');
     expect(de[3].attributes['routerLink']).toBe('/admin');
     expect(de[4].attributes['routerLink']).toBe('/logout');
+
   });
 
 });
